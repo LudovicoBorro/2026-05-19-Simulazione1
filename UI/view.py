@@ -33,6 +33,8 @@ class View(ft.UserControl):
                       alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row1)
 
+        self._controller.fillDDGenre()
+
         self._ddArtist = ft.Dropdown(label="Artist", width=250)
         self._btnCreaGrafo = ft.ElevatedButton(text="Trova Cammino", on_click=self._controller.handleCammino, width=250)
 
